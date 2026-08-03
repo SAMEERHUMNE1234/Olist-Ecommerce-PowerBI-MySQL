@@ -100,7 +100,7 @@ The PBIX file exceeds GitHub's upload limit.
 
 **Download PBIX Here**
 
-👉 Paste your Google Drive link here
+👉 https://drive.google.com/file/d/1BUSPZQdUNUJaKhNNyiZsBFzA-0fC-qrf/view?usp=drive_link
 
 ---
 
