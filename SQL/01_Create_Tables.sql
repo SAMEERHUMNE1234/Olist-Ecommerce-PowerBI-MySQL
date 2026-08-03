@@ -1,3 +1,4 @@
+## 01_TABLE
 CREATE TABLE customers (
     customer_id VARCHAR(50) PRIMARY KEY,
     customer_unique_id VARCHAR(50),
@@ -6,6 +7,7 @@ CREATE TABLE customers (
     customer_state CHAR(2)
 );
 
+## 02_TABLE
 CREATE TABLE orders (
     order_id VARCHAR(50) PRIMARY KEY,
     customer_id VARCHAR(50),
@@ -17,6 +19,7 @@ CREATE TABLE orders (
     order_estimated_delivery_date VARCHAR(50)
 );
 
+## 03_TABLE
 CREATE TABLE order_items (
     order_id VARCHAR(50),
     order_item_id INT,
@@ -27,6 +30,7 @@ CREATE TABLE order_items (
     freight_value DECIMAL(10,2)
 );
 
+## 04_TABLE
 CREATE TABLE order_payments (
     order_id VARCHAR(50),
     payment_sequential INT,
@@ -35,6 +39,7 @@ CREATE TABLE order_payments (
     payment_value DECIMAL(10,2)
 );
 
+## 05_TABLE
 CREATE TABLE products (
     product_id VARCHAR(50) PRIMARY KEY,
     product_category_name VARCHAR(100),
@@ -47,6 +52,7 @@ CREATE TABLE products (
     product_width_cm VARCHAR(50)
 );
 
+## 06_TABLE
 CREATE TABLE sellers (
     seller_id VARCHAR(50) PRIMARY KEY,
     seller_zip_code_prefix INT,
@@ -54,10 +60,17 @@ CREATE TABLE sellers (
     seller_state CHAR(2)
 );
 
+## 07_TABLE
 CREATE TABLE geolocation (
     geolocation_zip_code_prefix INT,
     geolocation_lat DECIMAL(10,8),
     geolocation_lng DECIMAL(11,8),
     geolocation_city VARCHAR(100),
     geolocation_state CHAR(2)
+);
+
+## 08_TABLE
+CREATE TABLE category_translation (
+    product_category_name VARCHAR(100) PRIMARY KEY,
+    product_category_name_english VARCHAR(100)
 );
