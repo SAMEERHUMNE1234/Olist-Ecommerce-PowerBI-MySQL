@@ -1,1 +1,8 @@
+Olist Brazilian E-Commerce Dataset
 
+Source:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+This project uses the publicly available Olist dataset from Kaggle.
+The dataset is not included in this repository due to its large size.
+Please download it from the above link before running the SQL scripts and Power BI dashboard.
